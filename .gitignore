@@ -1,0 +1,15 @@
+/*
+!/*.gitignore
+!/systemverilog_files/
+!*.qpf
+!*.qsf
+!*.qws
+!*.bdf
+!*.vhd
+!*.v
+!*.sv
+!*.ptf
+!*.bsf
+!**/class.ptf
+!*.tbd
+!*.sof
