@@ -1,6 +1,6 @@
 /*
 !/*.gitignore
-!/systemverilog_files/
+!/modules/
 !*.qpf
 !*.qsf
 !*.qws
