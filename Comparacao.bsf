@@ -47,8 +47,8 @@ applicable agreement for further details.
 	(port
 		(pt 0 80)
 		(input)
-		(text "START" (rect 0 0 34 12)(font "Arial" ))
-		(text "START" (rect 21 75 55 87)(font "Arial" ))
+		(text "ENABLE" (rect 0 0 41 12)(font "Arial" ))
+		(text "ENABLE" (rect 21 75 62 87)(font "Arial" ))
 		(line (pt 0 80)(pt 16 80)(line_width 1))
 	)
 	(port
