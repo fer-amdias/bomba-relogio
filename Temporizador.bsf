@@ -38,6 +38,13 @@ applicable agreement for further details.
 		(line (pt 0 48)(pt 16 48)(line_width 1))
 	)
 	(port
+		(pt 0 64)
+		(input)
+		(text "CLOCK" (rect 0 0 34 12)(font "Arial" ))
+		(text "CLOCK" (rect 21 59 55 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 1))
+	)
+	(port
 		(pt 264 32)
 		(output)
 		(text "DECIMOS[0..3]" (rect 0 0 64 12)(font "Arial" ))
@@ -54,8 +61,8 @@ applicable agreement for further details.
 	(port
 		(pt 264 64)
 		(output)
-		(text "SEGUNDOS_DEZENA[0..3]" (rect 0 0 123 12)(font "Arial" ))
-		(text "SEGUNDOS_DEZENA[0..3]" (rect 120 59 243 71)(font "Arial" ))
+		(text "SEGUNDOS_DECIMOS[0..3]" (rect 0 0 125 12)(font "Arial" ))
+		(text "SEGUNDOS_DECIMOS[0..3]" (rect 118 59 243 71)(font "Arial" ))
 		(line (pt 264 64)(pt 248 64)(line_width 3))
 	)
 	(port
