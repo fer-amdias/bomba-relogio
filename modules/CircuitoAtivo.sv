@@ -5,9 +5,11 @@ module CircuitoAtivo (
 	output logic ENABLE
 );
 
+initial ENABLE = 0;
+
 always_ff @(posedge START, posedge ACERTOU_SENHA_B, posedge RESET) begin
-	if (RESET | ACERTOU_SENHA_B) ENABLE <= 1'b0;
-	else if (START) ENABLE <= 1'b1;
+	if (START) ENABLE <= 1'b1;
+	else if (RESET || ACERTOU_SENHA_B) ENABLE <= 1'b0;
 end
 
 endmodule
