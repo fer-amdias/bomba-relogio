@@ -35,7 +35,7 @@ module Temporizador(
         else if (running) begin
 
             // SATURA EM 2:00,000
-            if (MINUTOS == 0) begin
+            if (MINUTOS == 0 && SEGUNDOS_DECIMOS == 0 && SEGUNDOS_UNIDADE == 0 && DECIMOS == 0) begin
                 running <= 0;
 					 TEMPO_ACABOU <= 1;
             end
