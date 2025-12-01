@@ -45,7 +45,6 @@ set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
-set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
 set_location_assignment PIN_N25 -to SW[0]
 set_location_assignment PIN_N26 -to SW[1]
 set_location_assignment PIN_P25 -to SW[2]
@@ -471,8 +470,6 @@ set_location_assignment PIN_V24 -to GPIO_1[32]
 set_location_assignment PIN_V23 -to GPIO_1[33]
 set_location_assignment PIN_W25 -to GPIO_1[34]
 set_location_assignment PIN_W23 -to GPIO_1[35]
-set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
-set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name SYSTEMVERILOG_FILE modules/Temporizador.sv
 set_global_assignment -name SYSTEMVERILOG_FILE modules/MostrarTentativa.sv
 set_global_assignment -name SYSTEMVERILOG_FILE modules/MenorMaiorDecoder7.sv
@@ -490,22 +487,58 @@ set_global_assignment -name SYSTEMVERILOG_FILE modules/CircuitoAtivo.sv
 set_global_assignment -name BDF_FILE modules/Armazenamento.bdf
 set_global_assignment -name BDF_FILE ProjetoFinal.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE modules/Waveform.vwf
-set_global_assignment -name SIMULATION_MODE FUNCTIONAL
 set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
-set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
-set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
-set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
-set_global_assignment -name VECTOR_OUTPUT_FORMAT VWF
 set_global_assignment -name RTLV_REMOVE_FANOUT_FREE_REGISTERS OFF
 set_global_assignment -name RTLV_SIMPLIFIED_LOGIC OFF
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform1.vwf
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/altera/13.0sp1/ProjetoFinal/Waveform1.vwf"
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name SYSTEMVERILOG_FILE modules/fdiv.sv
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name USE_CONFIGURATION_DEVICE ON
 set_global_assignment -name CYCLONEII_RESERVE_NCEO_AFTER_CONFIGURATION "USE AS REGULAR IO"
 set_global_assignment -name RESERVE_ASDO_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
+set_location_assignment PIN_AE22 -to LEDG0
+set_location_assignment PIN_V18 -to LEDG3
+set_location_assignment PIN_AA20 -to LEDG6
+set_location_assignment PIN_Y18 -to LEDG7
+set_location_assignment PIN_Y12 -to LEDG8
+set_location_assignment PIN_N25 -to SW0
+set_location_assignment PIN_N26 -to SW1
+set_location_assignment PIN_P25 -to SW2
+set_location_assignment PIN_AE14 -to SW3
+set_location_assignment PIN_AF14 -to SW4
+set_location_assignment PIN_AD13 -to SW5
+set_location_assignment PIN_AC13 -to SW6
+set_location_assignment PIN_C13 -to SW7
+set_location_assignment PIN_B13 -to SW8
+set_location_assignment PIN_A13 -to SW9
+set_location_assignment PIN_N1 -to SW10
+set_location_assignment PIN_P1 -to SW11
+set_location_assignment PIN_P2 -to SW12
+set_location_assignment PIN_T7 -to SW13
+set_location_assignment PIN_U3 -to SW14
+set_location_assignment PIN_U4 -to SW15
+set_location_assignment PIN_V1 -to SW16
+set_location_assignment PIN_V2 -to SW17
+set_location_assignment PIN_AE23 -to LEDR0
+set_location_assignment PIN_AF23 -to LEDR1
+set_location_assignment PIN_AB21 -to LEDR2
+set_location_assignment PIN_AC22 -to LEDR3
+set_location_assignment PIN_AD22 -to LEDR4
+set_location_assignment PIN_AD23 -to LEDR5
+set_location_assignment PIN_AD21 -to LEDR6
+set_location_assignment PIN_AC21 -to LEDR7
+set_location_assignment PIN_AA14 -to LEDR8
+set_location_assignment PIN_Y13 -to LEDR9
+set_location_assignment PIN_AA13 -to LEDR10
+set_location_assignment PIN_AC14 -to LEDR11
+set_location_assignment PIN_AD15 -to LEDR12
+set_location_assignment PIN_AE15 -to LEDR13
+set_location_assignment PIN_AF13 -to LEDR14
+set_location_assignment PIN_AE13 -to LEDR15
+set_location_assignment PIN_AE12 -to LEDR16
+set_location_assignment PIN_AD12 -to LEDR17
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
