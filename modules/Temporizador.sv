@@ -8,4 +8,11 @@ module Temporizador(
 	output logic TEMPO_ACABOU
 );
 
+// PLACEHOLDER
+assign DECIMOS = 0;
+assign SEGUNDOS_UNIDADE = 0;
+assign SEGUNDOS_DEZENA = 0;
+assign MINUTOS = 0;
+assign TEMPO_ACABOU = 0;
+
 endmodule
