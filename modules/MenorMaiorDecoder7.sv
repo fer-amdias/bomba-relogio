@@ -4,7 +4,7 @@ module MenorMaiorDecoder7 (
 );
 
 always_comb begin
-	if (MENOR_OU_MAIOR)  OUT = 7'b0000110;
-	else 						OUT = 7'b0110000;
+	if (MENOR_OU_MAIOR)  OUT = 7'b1111001;
+	else 						OUT = 7'b1001111;
 end
 endmodule
