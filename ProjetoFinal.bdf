@@ -455,56 +455,6 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 848 184 1104 328)
-	(text "DicaBitsCorretos" (rect 5 0 88 12)(font "Arial" ))
-	(text "inst9" (rect 8 128 29 138)(font "Arial" (font_size 6)(bold_italic)))
-	(port
-		(pt 0 32)
-		(input)
-		(text "ENABLE" (rect 0 0 42 12)(font "Arial" ))
-		(text "ENABLE" (rect 21 27 63 39)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "TENTATIVA[0..3]" (rect 0 0 83 12)(font "Arial" ))
-		(text "TENTATIVA[0..3]" (rect 21 43 104 55)(font "Arial" ))
-		(line (pt 0 48)(pt 16 48)(line_width 3))
-	)
-	(port
-		(pt 0 64)
-		(input)
-		(text "A[0..3]" (rect 0 0 33 12)(font "Arial" ))
-		(text "A[0..3]" (rect 21 59 54 71)(font "Arial" ))
-		(line (pt 0 64)(pt 16 64)(line_width 3))
-	)
-	(port
-		(pt 0 80)
-		(input)
-		(text "B[0..2]" (rect 0 0 33 12)(font "Arial" ))
-		(text "B[0..2]" (rect 21 75 54 87)(font "Arial" ))
-		(line (pt 0 80)(pt 16 80)(line_width 3))
-	)
-	(port
-		(pt 0 96)
-		(input)
-		(text "ACERTOU_SENHA_A" (rect 0 0 110 12)(font "Arial" ))
-		(text "ACERTOU_SENHA_A" (rect 21 91 131 103)(font "Arial" ))
-		(line (pt 0 96)(pt 16 96))
-	)
-	(port
-		(pt 256 32)
-		(output)
-		(text "LEDR[0..3]" (rect 0 0 55 12)(font "Arial" ))
-		(text "LEDR[0..3]" (rect 189 27 244 39)(font "Arial" ))
-		(line (pt 256 32)(pt 240 32)(line_width 3))
-	)
-	(drawing
-		(rectangle (rect 16 16 240 128))
-	)
-)
-(symbol
 	(rect 1568 56 1728 136)
 	(text "decoder7" (rect 5 0 49 12)(font "Arial" ))
 	(text "inst18" (rect 8 64 33 74)(font "Arial" (font_size 6)(bold_italic)))
@@ -651,84 +601,6 @@ applicable agreement for further details.
 		(line (pt 8 8)(pt 16 16))
 		(line (pt 16 16)(pt 24 8))
 		(line (pt 8 8)(pt 24 8))
-	)
-)
-(symbol
-	(rect 1424 -184 1720 24)
-	(text "Explosao" (rect 5 0 49 12)(font "Arial" ))
-	(text "inst22" (rect 8 192 33 202)(font "Arial" (font_size 6)(bold_italic)))
-	(port
-		(pt 0 32)
-		(input)
-		(text "TEMPO_ACABOU" (rect 0 0 88 12)(font "Arial" ))
-		(text "TEMPO_ACABOU" (rect 21 27 109 39)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 296 32)
-		(output)
-		(text "EXPLOSAO_HEX0[6..0]" (rect 0 0 115 12)(font "Arial" ))
-		(text "EXPLOSAO_HEX0[6..0]" (rect 178 27 293 39)(font "Arial" ))
-		(line (pt 296 32)(pt 280 32)(line_width 3))
-	)
-	(port
-		(pt 296 48)
-		(output)
-		(text "EXPLOSAO_HEX1[6..0]" (rect 0 0 115 12)(font "Arial" ))
-		(text "EXPLOSAO_HEX1[6..0]" (rect 178 43 293 55)(font "Arial" ))
-		(line (pt 296 48)(pt 280 48)(line_width 3))
-	)
-	(port
-		(pt 296 64)
-		(output)
-		(text "EXPLOSAO_HEX2[6..0]" (rect 0 0 115 12)(font "Arial" ))
-		(text "EXPLOSAO_HEX2[6..0]" (rect 178 59 293 71)(font "Arial" ))
-		(line (pt 296 64)(pt 280 64)(line_width 3))
-	)
-	(port
-		(pt 296 80)
-		(output)
-		(text "EXPLOSAO_HEX3[6..0]" (rect 0 0 115 12)(font "Arial" ))
-		(text "EXPLOSAO_HEX3[6..0]" (rect 178 75 293 87)(font "Arial" ))
-		(line (pt 296 80)(pt 280 80)(line_width 3))
-	)
-	(port
-		(pt 296 96)
-		(output)
-		(text "EXPLOSAO_HEX4[6..0]" (rect 0 0 115 12)(font "Arial" ))
-		(text "EXPLOSAO_HEX4[6..0]" (rect 178 91 293 103)(font "Arial" ))
-		(line (pt 296 96)(pt 280 96)(line_width 3))
-	)
-	(port
-		(pt 296 112)
-		(output)
-		(text "EXPLOSAO_HEX5[6..0]" (rect 0 0 115 12)(font "Arial" ))
-		(text "EXPLOSAO_HEX5[6..0]" (rect 178 107 293 119)(font "Arial" ))
-		(line (pt 296 112)(pt 280 112)(line_width 3))
-	)
-	(port
-		(pt 296 128)
-		(output)
-		(text "EXPLOSAO_HEX6[6..0]" (rect 0 0 115 12)(font "Arial" ))
-		(text "EXPLOSAO_HEX6[6..0]" (rect 178 123 293 135)(font "Arial" ))
-		(line (pt 296 128)(pt 280 128)(line_width 3))
-	)
-	(port
-		(pt 296 144)
-		(output)
-		(text "EXPLOSAO_HEX7[6..0]" (rect 0 0 115 12)(font "Arial" ))
-		(text "EXPLOSAO_HEX7[6..0]" (rect 178 139 293 151)(font "Arial" ))
-		(line (pt 296 144)(pt 280 144)(line_width 3))
-	)
-	(port
-		(pt 296 160)
-		(output)
-		(text "EXPLOSAO_LEDR[17..0]" (rect 0 0 123 12)(font "Arial" ))
-		(text "EXPLOSAO_LEDR[17..0]" (rect 171 155 294 167)(font "Arial" ))
-		(line (pt 296 160)(pt 280 160)(line_width 3))
-	)
-	(drawing
-		(rectangle (rect 16 16 280 192))
 	)
 )
 (symbol
@@ -1394,6 +1266,170 @@ applicable agreement for further details.
 		(rectangle (rect 16 16 272 128))
 	)
 )
+(symbol
+	(rect 1256 -168 1400 -88)
+	(text "fdiv" (rect 5 0 25 12)(font "Arial" ))
+	(text "inst23" (rect 8 64 33 74)(font "Arial" (font_size 6)(bold_italic)))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clkin" (rect 0 0 22 12)(font "Arial" ))
+		(text "clkin" (rect 21 27 43 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 144 32)
+		(output)
+		(text "clkout" (rect 0 0 29 12)(font "Arial" ))
+		(text "clkout" (rect 99 27 128 39)(font "Arial" ))
+		(line (pt 144 32)(pt 128 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 128 64))
+	)
+)
+(symbol
+	(rect 840 184 1096 328)
+	(text "DicaBitsCorretos" (rect 5 0 88 12)(font "Arial" ))
+	(text "inst32" (rect 8 128 33 138)(font "Arial" (font_size 6)(bold_italic)))
+	(port
+		(pt 0 32)
+		(input)
+		(text "ENABLE" (rect 0 0 42 12)(font "Arial" ))
+		(text "ENABLE" (rect 21 27 63 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "TENTATIVA[3..0]" (rect 0 0 83 12)(font "Arial" ))
+		(text "TENTATIVA[3..0]" (rect 21 43 104 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "A[3..0]" (rect 0 0 33 12)(font "Arial" ))
+		(text "A[3..0]" (rect 21 59 54 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "B[2..0]" (rect 0 0 33 12)(font "Arial" ))
+		(text "B[2..0]" (rect 21 75 54 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "ENTER" (rect 0 0 36 12)(font "Arial" ))
+		(text "ENTER" (rect 21 91 57 103)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "ACERTOU_SENHA_A" (rect 0 0 110 12)(font "Arial" ))
+		(text "ACERTOU_SENHA_A" (rect 21 107 131 119)(font "Arial" ))
+		(line (pt 0 112)(pt 16 112))
+	)
+	(port
+		(pt 256 32)
+		(output)
+		(text "LEDR[0..3]" (rect 0 0 55 12)(font "Arial" ))
+		(text "LEDR[0..3]" (rect 189 27 244 39)(font "Arial" ))
+		(line (pt 256 32)(pt 240 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 240 128))
+	)
+)
+(symbol
+	(rect 1424 -184 1720 24)
+	(text "Explosao" (rect 5 0 49 12)(font "Arial" ))
+	(text "inst22" (rect 8 192 37 204)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "TEMPO_ACABOU" (rect 0 0 88 12)(font "Arial" ))
+		(text "TEMPO_ACABOU" (rect 21 27 109 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "CLOCK" (rect 0 0 37 12)(font "Arial" ))
+		(text "CLOCK" (rect 21 43 58 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 296 32)
+		(output)
+		(text "EXPLOSAO_HEX0[6..0]" (rect 0 0 115 12)(font "Arial" ))
+		(text "EXPLOSAO_HEX0[6..0]" (rect 178 27 275 39)(font "Arial" ))
+		(line (pt 296 32)(pt 280 32)(line_width 3))
+	)
+	(port
+		(pt 296 48)
+		(output)
+		(text "EXPLOSAO_HEX1[6..0]" (rect 0 0 115 12)(font "Arial" ))
+		(text "EXPLOSAO_HEX1[6..0]" (rect 178 43 275 55)(font "Arial" ))
+		(line (pt 296 48)(pt 280 48)(line_width 3))
+	)
+	(port
+		(pt 296 64)
+		(output)
+		(text "EXPLOSAO_HEX2[6..0]" (rect 0 0 115 12)(font "Arial" ))
+		(text "EXPLOSAO_HEX2[6..0]" (rect 178 59 275 71)(font "Arial" ))
+		(line (pt 296 64)(pt 280 64)(line_width 3))
+	)
+	(port
+		(pt 296 80)
+		(output)
+		(text "EXPLOSAO_HEX3[6..0]" (rect 0 0 115 12)(font "Arial" ))
+		(text "EXPLOSAO_HEX3[6..0]" (rect 178 75 275 87)(font "Arial" ))
+		(line (pt 296 80)(pt 280 80)(line_width 3))
+	)
+	(port
+		(pt 296 96)
+		(output)
+		(text "EXPLOSAO_HEX4[6..0]" (rect 0 0 115 12)(font "Arial" ))
+		(text "EXPLOSAO_HEX4[6..0]" (rect 178 91 275 103)(font "Arial" ))
+		(line (pt 296 96)(pt 280 96)(line_width 3))
+	)
+	(port
+		(pt 296 112)
+		(output)
+		(text "EXPLOSAO_HEX5[6..0]" (rect 0 0 115 12)(font "Arial" ))
+		(text "EXPLOSAO_HEX5[6..0]" (rect 178 107 275 119)(font "Arial" ))
+		(line (pt 296 112)(pt 280 112)(line_width 3))
+	)
+	(port
+		(pt 296 128)
+		(output)
+		(text "EXPLOSAO_HEX6[6..0]" (rect 0 0 115 12)(font "Arial" ))
+		(text "EXPLOSAO_HEX6[6..0]" (rect 178 123 275 135)(font "Arial" ))
+		(line (pt 296 128)(pt 280 128)(line_width 3))
+	)
+	(port
+		(pt 296 144)
+		(output)
+		(text "EXPLOSAO_HEX7[6..0]" (rect 0 0 115 12)(font "Arial" ))
+		(text "EXPLOSAO_HEX7[6..0]" (rect 178 139 275 151)(font "Arial" ))
+		(line (pt 296 144)(pt 280 144)(line_width 3))
+	)
+	(port
+		(pt 296 160)
+		(output)
+		(text "EXPLOSAO_LEDR[17..0]" (rect 0 0 123 12)(font "Arial" ))
+		(text "EXPLOSAO_LEDR[17..0]" (rect 171 155 275 167)(font "Arial" ))
+		(line (pt 296 160)(pt 280 160)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 280 192))
+	)
+)
 (connector
 	(pt 56 288)
 	(pt 64 288)
@@ -1429,10 +1465,6 @@ applicable agreement for further details.
 	(pt 800 392)
 	(pt 848 392)
 	(bus)
-)
-(connector
-	(pt 832 216)
-	(pt 848 216)
 )
 (connector
 	(pt 832 360)
@@ -1549,16 +1581,6 @@ applicable agreement for further details.
 (connector
 	(pt 1728 248)
 	(pt 1904 248)
-	(bus)
-)
-(connector
-	(pt 1104 216)
-	(pt 1504 216)
-	(bus)
-)
-(connector
-	(pt 1504 216)
-	(pt 1504 408)
 	(bus)
 )
 (connector
@@ -1931,42 +1953,9 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 768 232)
-	(pt 848 232)
-	(bus)
-)
-(connector
-	(pt 848 248)
-	(pt 784 248)
-	(bus)
-)
-(connector
-	(pt 784 248)
-	(pt 784 376)
-	(bus)
-)
-(connector
-	(pt 360 376)
-	(pt 784 376)
-	(bus)
-)
-(connector
-	(pt 800 264)
-	(pt 848 264)
-	(bus)
-)
-(connector
-	(pt 752 280)
-	(pt 848 280)
-)
-(connector
 	(pt 8 400)
 	(pt 168 400)
 	(bus)
-)
-(connector
-	(pt 64 472)
-	(pt 784 472)
 )
 (connector
 	(pt 88 80)
@@ -1987,14 +1976,6 @@ applicable agreement for further details.
 (connector
 	(pt 584 64)
 	(pt 832 64)
-)
-(connector
-	(pt 832 64)
-	(pt 832 216)
-)
-(connector
-	(pt 832 216)
-	(pt 832 360)
 )
 (connector
 	(pt 1488 568)
@@ -2088,25 +2069,6 @@ applicable agreement for further details.
 	(pt 832 680)
 )
 (connector
-	(pt 768 232)
-	(pt 768 488)
-	(bus)
-)
-(connector
-	(pt 752 552)
-	(pt 752 664)
-)
-(connector
-	(pt 800 264)
-	(pt 800 392)
-	(bus)
-)
-(connector
-	(pt 800 392)
-	(pt 800 536)
-	(bus)
-)
-(connector
 	(pt 800 536)
 	(pt 848 536)
 	(bus)
@@ -2117,11 +2079,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 784 376)
-	(pt 816 376)
-	(bus)
-)
-(connector
 	(pt 816 376)
 	(pt 848 376)
 	(bus)
@@ -2129,11 +2086,6 @@ applicable agreement for further details.
 (connector
 	(pt 816 520)
 	(pt 848 520)
-	(bus)
-)
-(connector
-	(pt 768 488)
-	(pt 768 504)
 	(bus)
 )
 (connector
@@ -2165,10 +2117,6 @@ applicable agreement for further details.
 (connector
 	(pt 96 232)
 	(pt 136 232)
-)
-(connector
-	(pt 96 208)
-	(pt 16 208)
 )
 (connector
 	(pt 304 208)
@@ -2307,10 +2255,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 752 280)
-	(pt 752 552)
-)
-(connector
 	(pt 664 552)
 	(pt 752 552)
 )
@@ -2346,6 +2290,126 @@ applicable agreement for further details.
 	(pt 320 48)
 	(pt 320 64)
 )
+(connector
+	(pt 1400 -136)
+	(pt 1424 -136)
+)
+(connector
+	(pt 56 208)
+	(pt 56 -136)
+)
+(connector
+	(pt 56 -136)
+	(pt 1256 -136)
+)
+(connector
+	(pt 96 208)
+	(pt 56 208)
+)
+(connector
+	(pt 56 208)
+	(pt 16 208)
+)
+(connector
+	(pt 832 216)
+	(pt 840 216)
+)
+(connector
+	(pt 1504 408)
+	(pt 1504 216)
+	(bus)
+)
+(connector
+	(pt 768 232)
+	(pt 840 232)
+	(bus)
+)
+(connector
+	(pt 784 248)
+	(pt 840 248)
+	(bus)
+)
+(connector
+	(pt 784 376)
+	(pt 784 248)
+	(bus)
+)
+(connector
+	(pt 800 264)
+	(pt 840 264)
+	(bus)
+)
+(connector
+	(pt 752 296)
+	(pt 840 296)
+)
+(connector
+	(pt 720 472)
+	(pt 720 280)
+)
+(connector
+	(pt 720 280)
+	(pt 840 280)
+)
+(connector
+	(pt 832 64)
+	(pt 832 216)
+)
+(connector
+	(pt 832 216)
+	(pt 832 360)
+)
+(connector
+	(pt 360 376)
+	(pt 784 376)
+	(bus)
+)
+(connector
+	(pt 784 376)
+	(pt 816 376)
+	(bus)
+)
+(connector
+	(pt 768 232)
+	(pt 768 488)
+	(bus)
+)
+(connector
+	(pt 768 488)
+	(pt 768 504)
+	(bus)
+)
+(connector
+	(pt 800 264)
+	(pt 800 392)
+	(bus)
+)
+(connector
+	(pt 800 392)
+	(pt 800 536)
+	(bus)
+)
+(connector
+	(pt 752 296)
+	(pt 752 552)
+)
+(connector
+	(pt 752 552)
+	(pt 752 664)
+)
+(connector
+	(pt 64 472)
+	(pt 720 472)
+)
+(connector
+	(pt 720 472)
+	(pt 784 472)
+)
+(connector
+	(pt 1096 216)
+	(pt 1504 216)
+	(bus)
+)
 (junction (pt 336 400))
 (junction (pt 320 416))
 (junction (pt 816 376))
@@ -2380,5 +2444,7 @@ applicable agreement for further details.
 (junction (pt 320 176))
 (junction (pt 144 416))
 (junction (pt 680 568))
+(junction (pt 56 208))
+(junction (pt 720 472))
 (text "Converte para ativa em 1" (rect -72 312 70 326)(font "Arial" (font_size 8)))
 (text "Converte para ativa em 1" (rect -72 256 70 270)(font "Arial" (font_size 8)))
