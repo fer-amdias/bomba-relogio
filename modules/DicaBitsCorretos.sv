@@ -3,6 +3,7 @@ module DicaBitsCorretos (
 	input logic [0:3] TENTATIVA,
 	input logic [0:3] A,
 	input logic [0:2] B,
+	input logic ENTER,
 	input logic ACERTOU_SENHA_A,
 	output logic [0:3] LEDR
 );
