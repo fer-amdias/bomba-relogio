@@ -12,7 +12,7 @@ module Explosao(
 	output logic [17:0] EXPLOSAO_LEDR
 );
 
-logic [1:0] counter;
+logic [1:0] counter; //teste
 
 always_ff @(posedge CLOCK) begin
 
