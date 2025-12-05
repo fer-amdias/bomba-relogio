@@ -27,8 +27,8 @@ module Temporizador(
     // --------------------------------------------------
         if (RESET) begin
             DECIMOS <= 0;
-            SEGUNDOS_UNIDADE <= 0;
-            SEGUNDOS_DECIMOS <= 0;
+            SEGUNDOS_UNIDADE <= 9;
+            SEGUNDOS_DECIMOS <= 5;
             MINUTOS <= 2;
 				TEMPO_ACABOU <= 0;
         end
