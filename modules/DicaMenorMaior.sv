@@ -15,14 +15,14 @@ always_ff @(posedge ENTER, posedge RESET) begin
 	end else
 	if (ENABLE) begin
 		if (ACERTOU_SENHA_A) begin
-			if (TENTATIVA[1:3] > B) MENOR_OU_MAIOR <= 7'b1111001;
+			if (TENTATIVA[1:3] > B) MENOR_OU_MAIOR <= 7'b1001111;
 			else if (TENTATIVA[1:3] == B) MENOR_OU_MAIOR <= 7'b 1111111;
-			else MENOR_OU_MAIOR <= 7'b1001111;
+			else MENOR_OU_MAIOR <= 7'b1111001;
 		end
 		else begin
-			if (TENTATIVA > A) MENOR_OU_MAIOR <= 7'b1111001;
+			if (TENTATIVA > A) MENOR_OU_MAIOR <= 7'b1001111;
 			else if (TENTATIVA == A) MENOR_OU_MAIOR <= 7'b 1111111;
-			else MENOR_OU_MAIOR <= 7'b1001111;
+			else MENOR_OU_MAIOR <= 7'b1111001;
 		end
 	end
 end
