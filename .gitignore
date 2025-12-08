@@ -13,3 +13,6 @@
 !**/class.ptf
 !*.tbd
 !*.sof
+/modules/*.bak
+/modules/*.vwf
+/modules/*.temp
