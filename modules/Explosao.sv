@@ -12,7 +12,6 @@ module Explosao(
 	output logic [17:0] EXPLOSAO_LEDR
 );
 
-logic [1:0] counter; //teste
 logic [1:0] counter;
 logic [6:0] EXPLOSAO_HEX;
 logic EXPLOSAO_LEDR0;
