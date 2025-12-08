@@ -479,7 +479,6 @@ set_global_assignment -name SYSTEMVERILOG_FILE modules/Explosao.sv
 set_global_assignment -name SYSTEMVERILOG_FILE modules/display7mux2.sv
 set_global_assignment -name SYSTEMVERILOG_FILE modules/DicaParidade.sv
 set_global_assignment -name SYSTEMVERILOG_FILE modules/DicaMenorMaior.sv
-set_global_assignment -name SYSTEMVERILOG_FILE modules/DicaBitsCorretos.sv
 set_global_assignment -name SYSTEMVERILOG_FILE modules/decoder7.sv
 set_global_assignment -name SYSTEMVERILOG_FILE modules/Comparacao.sv
 set_global_assignment -name SYSTEMVERILOG_FILE modules/CircuitoAtivo.sv
@@ -542,4 +541,6 @@ set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_RO
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name SYSTEMVERILOG_FILE modules/mux2.sv
 set_global_assignment -name BDF_FILE modules/MostrarTentativa.bdf
+set_global_assignment -name SYSTEMVERILOG_FILE modules/LEDRdecoder.sv
+set_global_assignment -name BDF_FILE modules/DicaBitsCorretos.bdf
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
