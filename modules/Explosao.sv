@@ -29,16 +29,18 @@ assign counter10 = counter[1] & ~counter[0];
 assign counter11 = counter[1] & counter[0];
 
 always_ff @(posedge CLOCK) begin
-
-	if (TEMPO_ACABOU) begin
+	if (!TEMPO_ACABOU) counter <= 0;
 	casex (counter)
 		7'b00xxxxx: begin // por 3.2 segundos
-			counter <= counter + 1;
+			if (TEMPO_ACABOU) counter <= counter + 1;
 			// explosao_hex fica negado pois o display é ativo em 0
-			EXPLOSAO_HEX[1:0] <= ~counter00;
-			EXPLOSAO_HEX[3:2] <= ~counter01;
-			EXPLOSAO_HEX[5:4] <= ~counter10;		
-			EXPLOSAO_HEX[6]   <= ~counter11;
+			EXPLOSAO_HEX[0] <= ~counter00;
+			EXPLOSAO_HEX[1] <= ~counter00;
+			EXPLOSAO_HEX[2] <= ~counter01;
+			EXPLOSAO_HEX[3] <= ~counter01;
+			EXPLOSAO_HEX[4] <= ~counter10;	
+			EXPLOSAO_HEX[5] <= ~counter10;
+			EXPLOSAO_HEX[6] <= ~counter11;
 			
 			EXPLOSAO_LEDR0   <= counter00;
 			EXPLOSAO_LEDR1   <= counter01;
@@ -72,8 +74,15 @@ always_ff @(posedge CLOCK) begin
 			EXPLOSAO_LEDR[11]  <= EXPLOSAO_LEDR3;
 			EXPLOSAO_LEDR[15]  <= EXPLOSAO_LEDR3;
 		end
-		7'b01xxxxx:  begin // por 3.2 segundos
-			counter <= counter + 1;
+		7'b1xxxxxx: begin // pra sempre (ele nao conta a partir daqui)
+			EXPLOSAO_HEX4 <= 7'b1000001; // u
+			EXPLOSAO_HEX3 <= 7'b0100001; // d
+			EXPLOSAO_HEX2 <= 7'b1111001; // i
+			EXPLOSAO_HEX1 <= 7'b0000110; // e
+			EXPLOSAO_HEX0 <= 7'b0100001; // d
+		end
+		default:  begin // por 3.2 segundos
+			if (TEMPO_ACABOU) counter <= counter + 1;
 			EXPLOSAO_HEX0 <= 7'b1111111;
 			EXPLOSAO_HEX1 <= 7'b1111111;
 			EXPLOSAO_HEX2 <= 7'b1111111;
@@ -84,15 +93,7 @@ always_ff @(posedge CLOCK) begin
 			EXPLOSAO_HEX7 <= 7'b1111111;
 			EXPLOSAO_LEDR <= 0;
 		end
-		default: begin // pra sempre (ele nao conta a partir daqui)
-			EXPLOSAO_HEX4 <= 7'b1000001; // u
-			EXPLOSAO_HEX3 <= 7'b0100001; // d
-			EXPLOSAO_HEX2 <= 7'b1111001; // i
-			EXPLOSAO_HEX1 <= 7'b0000110; // e
-			EXPLOSAO_HEX0 <= 7'b0100001; // d
-		end
 		endcase
-	end
 end
 
 endmodule
