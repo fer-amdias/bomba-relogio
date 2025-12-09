@@ -5,6 +5,6 @@ module DicaParidade (
 	output logic BIT_PARIDADE
 );
 
-assign BIT_PARIDADE = A[3] ^ B[2];
+assign BIT_PARIDADE = A[0] ^ A[1] ^ A[2] ^ A[3] ^ B[0] ^ B[1] ^ B[2];
 
 endmodule
