@@ -10,7 +10,7 @@ module Temporizador(
 );
 // João: olhando o esquema geral do projeto, o KEY[0]
 // é o START (ativo em 1), mas está ligado no RESET.
-// Por isso, vou construir o módulo assuMINUTOSdo que RESET = START.
+// Por isso, vou construir o módulo assumindo que RESET = START.
    logic running;
 
     always_ff @(posedge CLOCK) begin
